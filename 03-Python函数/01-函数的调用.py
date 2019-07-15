@@ -31,3 +31,6 @@ n2 = 1000;
 print('n1转换为十六进制的字符串是：%s'%hex(n1))
 print('n2转换为十六进制的字符串是：%s'%hex(n2))
 
+from rebase import my_abs;
+print(my_abs(-121.233));
+
