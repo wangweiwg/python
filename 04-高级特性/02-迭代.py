@@ -43,6 +43,7 @@ def findMinAndMax(L):
 			if item > maxX:
 				maxX = item;
 		return (minX, maxX);
-
 r = findMinAndMax([3, 9, 4, 19, 1, 8]);
 print(r);
+
+
