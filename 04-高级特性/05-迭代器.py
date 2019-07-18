@@ -4,3 +4,9 @@
 # 一类是generator，包括生成器和带yield的generator function
 # 这些可以直接作用于for循环的对象称为可迭代对象：Iterable
 # 可以使用isinstance()判断一个对象是否是Iterable对象
+from collections import Iterable;
+print(isinstance([], Iterable));
+print(isinstance({}, Iterable));
+print(isinstance('abc', Iterable));
+print(isinstance((1, 2), Iterable));
+print(isinstance(100, Iterable));
