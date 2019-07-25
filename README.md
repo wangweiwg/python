@@ -1,6 +1,9 @@
 # Python练习
 **坚持每天学习Python，先把[廖雪峰官网](https://www.liaoxuefeng.com/wiki/1016959663602400 "廖雪峰官网")的教程学习一遍**
-![热爱学习每一天](http://p0.so.qhimgs1.com/sdr/400__/t01bb1fd1a798f4af6c.png "开工啦")
+
+<div>
+	![热爱学习每一天](http://p0.so.qhimgs1.com/sdr/400__/t01bb1fd1a798f4af6c.png "开工啦")
+</div>
 
 1、使用PyCharm的时候会在目录自动添加.idea文件，团队开发的时候为了保持代码统一，
 可是在git中提交代码的时候忽略掉这个文件。创建.gitignore文件，把需要忽略的文件
