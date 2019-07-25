@@ -10,7 +10,7 @@
 * 由于公司git账户和本人github账号不一致，导致前几天git每天的提交记录在Contribution activity没有显示，执行 git config -l, 查看配置文件，发现user.email使用的是公司的，git config user.email youEmailAddress@XX.com修改github使用的email, 然后再次提交，就可以看到了
 
 >##目录介绍
-* ####[Python输入和输出](https://github.com/wangweiwg/python/tree/master/01-Python%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA "Python输入和输出")
+* [Python输入和输出](https://github.com/wangweiwg/python/tree/master/01-Python%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA "Python输入和输出")
 * [Python基础](https://github.com/wangweiwg/python/tree/master/02-Python%E5%9F%BA%E7%A1%80 "Python基础")
 * [Python函数](https://github.com/wangweiwg/python/tree/master/03-Python%E5%87%BD%E6%95%B0 "Python函数")
 * [高级特性](https://github.com/wangweiwg/python/tree/master/03-Python%E5%87%BD%E6%95%B0 "高级特性")
