@@ -154,3 +154,43 @@ class Chain(object):
 # GET /users/:user/repos
 # 调用时，需要把:user替换为实际用户名。如果我们能写出这样的链式调用：
 # Chain().users('michael').repos
+
+
+# __call__
+# 一个对象实例可以有自己的属性和方法，当我们调用实例方法时，我们用instance.method()来调用。
+# 能不能直接在实例本身上调用呢？在Python中，答案是肯定的。
+# 任何类，只需要定义一个__call__()方法，就可以直接对实例进行调用。
+class Student2(object):
+	def __init__(self, name):
+		self.name = name
+
+	def __call__(self):
+		print('我的名字是%s' %self.name)
+
+# 调用方式如下：
+s2 = Student2('哈哈')
+s2()
+
+# __call__()还可以定义参数，对实例进行直接调用就好比对一个函数进行调用一样，所以完全可以吧对象看成实例，
+# 把函数看成对象，因为这两者之间本来就没啥根本的区别
+# 
+# 如果把对象看成函数，那么函数本身其实也可以在运行期间动态创建出来，因为类的实例都是运行期间创建出来的，
+# 这么一来，就模糊了对象和函数的界限
+# 
+# 那么，怎么判断一个变量是对象还是函数呢？其实，更多的时候，我们需要判断一个对象是否能被调用，能被调用
+# 的对象就是一个Callable对象，比如函数和我们上面定义的带有__call__()的类实例：
+callable(Student2()) # True
+callable(max) # True
+callable([1, 2, 3]) #False
+# 通过callable()函数，我们就可以判断一个对象是否是“可调用”对象
+
+
+
+
+
+
+
+
+
+
+
