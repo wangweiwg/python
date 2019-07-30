@@ -14,7 +14,7 @@ def foo(s):
 	print('n 不等于 0')
 	return 10 / n
 
-foo('0');
+foo('10');
 # assert的意思是，表达式 n != 0应该是True, 否则根据程序运行的逻辑，后面的代码肯定会出错
 # n != 0 时，执行后面的程序
 # n = 0 时，抛出异常AssertionError: n is zero!
@@ -33,7 +33,14 @@ foo('0');
 
 # logging
 # 把print()替换为logging是第3种方式，和assert比，logging不会抛出错误，而且可以输出到文件：
-# 
+import logging
+logging.basicConfig(level=logging.INFO)
+s = '0'
+n = int(s)
+logging.info('n = %d' % n)
+print(10 / n)
+# logging.info()就可以输出一段文本。运行，发现除了ZeroDivisionError，没有任何信息。怎么回事？
+# 别急，在import logging之后添加一行配置再试试：
 
 
 
