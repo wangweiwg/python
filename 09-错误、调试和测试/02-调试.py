@@ -43,6 +43,17 @@ print(10 / n)
 # 别急，在import logging之后添加一行配置再试试：
 
 
+# 这就是logging的好处，它允许你指定记录信息的级别，有debug，info，waring，error等几个级别，
+# 当我们指定level=INFO时，logging.debug就不起作用了，同理，指定level=WARING后，debug和info
+# 就不起作用了，这样一来，你就可以放心地输出不同级别的信息，也不用删除，最后统一控制输出哪个级别的信息
+# logging的另一个好处是通过简单的配置，一条语句可以同时输出到不同的地方，比如console和文件
+
+
+
+# pdb
+# 第2种方式是启动Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态，先准备好程序：
+# 
+
 
 
 
