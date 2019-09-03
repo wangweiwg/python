@@ -100,6 +100,20 @@ fruits8 = sorted(fruits, key=len)
 print(fruits8)
 
 # 利用列表的生成式语法来创建列表，代码如下所示：
+import sys
+list3 = [x for x in range(5)]
+print(list3)
+list4 = [x + y for x in 'ABCDE' for y in '123456789']
+print(list4)
+
+# 用列表的生成表达式语法创建列表容器
+# 用这种语法创建列表之后元素已经准备就绪所以需要耗费较多的内存空间
+list5 = [x ** 2 for x in range(1, 100)]
+# 查看对象占用的内存的字节数
+print(sys.getsizeof(list5))
+print(list5)
+
+
 
 
 
